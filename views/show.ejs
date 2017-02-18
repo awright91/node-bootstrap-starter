@@ -1,0 +1,23 @@
+<% include ./partials/header%>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="project-div">
+			<h1><%= project.title%></h1>
+			<hr />
+			<p class="project-long-description"><%= project.longDescription%></p>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<img src='<%= project.image%>'/>
+			<div class="show-tech">
+			<h4><strong>Tech Used: </strong><%= project.tech%></h4>
+			<hr />
+			<span><strong>URL: </strong> <a href="<%= project.url%>"><%= project.url%></a></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% include ./partials/footer%>
